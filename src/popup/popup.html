@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download Dock</title>
+    <link rel="stylesheet" href="./popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="toolbar">
+        <div class="title-block">
+          <span class="app-mark png-icon icon-extension" aria-hidden="true"></span>
+          <div>
+            <h1>Download Dock</h1>
+          </div>
+        </div>
+        <div class="toolbar-actions">
+          <button id="show-folder" class="icon-button" type="button" title="打开下载文件夹" aria-label="打开下载文件夹">
+            <span class="png-icon icon-folder" aria-hidden="true"></span>
+          </button>
+          <button id="toggle-search" class="icon-button" type="button" title="搜索" aria-label="搜索">
+            <span class="png-icon icon-search" aria-hidden="true"></span>
+          </button>
+          <button id="refresh" class="icon-button" type="button" title="刷新" aria-label="刷新">
+            <span class="png-icon icon-refresh" aria-hidden="true"></span>
+          </button>
+          <button id="close-popup" class="icon-button" type="button" title="关闭" aria-label="关闭">
+            <span class="png-icon icon-close" aria-hidden="true"></span>
+          </button>
+        </div>
+      </header>
+
+      <div id="search-panel" class="search-panel" hidden>
+        <input id="search-input" type="search" placeholder="搜索下载记录" autocomplete="off">
+      </div>
+
+      <section id="downloads" class="downloads" aria-label="最近下载列表"></section>
+      <p id="loader" class="loader" aria-live="polite"></p>
+
+      <footer>
+        <button id="open-downloads" class="link-button" type="button">
+          <span>完整的下载记录</span>
+          <span class="png-icon icon-external" aria-hidden="true"></span>
+        </button>
+      </footer>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>

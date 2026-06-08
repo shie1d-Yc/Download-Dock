@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Download Dock",
+  "description": "A compact Chrome downloads popup for users who prefer the Edge-style download manager workflow.",
+  "version": "0.1.0",
+  "icons": {
+    "16": "src/assets/icons/extension-16.png",
+    "32": "src/assets/icons/extension-32.png",
+    "48": "src/assets/icons/extension-48.png",
+    "128": "src/assets/icons/extension-128.png"
+  },
+  "action": {
+    "default_title": "Download Dock",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "src/assets/icons/extension-16.png",
+      "32": "src/assets/icons/extension-32.png",
+      "48": "src/assets/icons/extension-48.png",
+      "128": "src/assets/icons/extension-128.png"
+    }
+  },
+  "permissions": [
+    "downloads",
+    "downloads.open"
+  ]
+}
